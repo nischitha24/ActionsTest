@@ -13,14 +13,12 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
     inputs:
-      batch:
-        type : boolean
-        description: test
-        options:
-        - tcq-3
-        - clean-s-1
-        - tcq-4
-        - tcq-m-2
+      logLevel:
+        description: 'Log level'     
+        required: true
+        default: 'warning'
+      tags:
+        description: 'Test scenario tags'  
         
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
