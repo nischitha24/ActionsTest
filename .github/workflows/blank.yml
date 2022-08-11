@@ -47,6 +47,3 @@ jobs:
     - run: |
         echo "Log level: ${{ github.event.inputs.logLevel }}"
         echo "Tags: ${{ github.event.inputs.tags }}"
-
-    - name: check index.js
-      run: node index.js
